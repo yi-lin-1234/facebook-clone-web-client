@@ -20,7 +20,6 @@ function Comment({ postId }: { postId: string }) {
       setIsLoading(true);
       try {
         const data = await getCommentsByPostId(postId);
-        console.log(data);
         setComments(data);
       } catch (error) {
         console.error(error);

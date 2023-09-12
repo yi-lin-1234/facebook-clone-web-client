@@ -27,7 +27,6 @@ function UserProfile() {
       try {
         const user = await getUserById(id);
         setUser(user);
-        console.log(user);
         const posts = await getPostsByUserId(id);
         setPosts(posts);
       } catch (error) {
